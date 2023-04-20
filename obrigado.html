@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+        * {
+            font-family: 'Open sans';
+        }
+
+        body {
+            background: silver;
+            margin: 0;
+        }
+
+        .topo {
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            background: blue;
+            text-align: center;
+            color: #FFF;
+        }
+
+        .tag {
+            display: flex;
+            font-size: 35pt;
+        }
+
+        .tutorial {
+            align-items: flex-end;
+            justify-content: flex-end;
+            height: 10%;
+            font-size: 10pt;
+            display: flex;
+            border: 1px solid black;
+        }
+
+        .divNav {
+            
+            padding-top: 10px;
+        }
+
+        .menu {
+            padding-left: 12px;
+            padding-right: 12px;
+            justify-content: space-between;
+            display: flex;
+            border: 1px solid black;
+            background: blue;
+        }
+
+        .inicio {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .html{
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .tabelas {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .sobre {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .rodape {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .contato {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+        
+        .conteudoRodape {
+            height: auto;
+            display: flex;
+            
+        }
+
+        .cont1 {
+            background: #092b5a;
+            width: 25%;
+            color: #FFF;
+        }
+
+        .cont2 {
+            background: rgb(101, 159, 218);
+            width: 25%;
+            color: #FFF;
+        }
+
+        .cont3 {
+            background: #04394e;
+            width: 25%;
+            color: #FFF;
+        }
+
+        .cont4 {
+            background: #09738a;
+            width: 25%;
+            color: #FFF;
+        }
+
+        .sobreHtml {
+            border: 1px solid blue;
+            padding: 5px;
+        }
+
+        .infoCont {
+            text-align: center;
+        }
+
+        .agradecimentoFormulario {
+            display: flex;
+            justify-content: center;
+            padding: 10%;
+            font-size: 18pt;
+        }
+
+        .direitos {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section class="topo">
+        <header>
+            <h1 class="tag">HTML <sup>Linguagem de Marcação de Hipertexto</sup></h1>
+            <h2 class="">Tutoriais para iniciantes</h2>
+        </header>
+    </section>
+    
+    <div class="divNav">
+        <nav class="menu">
+            <a href="/index.html" class="inicio"><p>Início</p></a>
+            <a href="#htmlfuncao" class="html"><p>HTML</p></a>
+            <a href="#tabelaElista" class="tabelas"><p>Tabelas</p></a>
+            <a href="#informacoes" class="sobre"><p>Sobre CSS, HTML e JS</p></a>
+            <a href="#rodape" class="rodape"><p>Rodapé</p></a>
+        </nav>
+    </div>
+
+    <section class="agradecimentoFormulario">
+        <h1>Obrigado por responder, entraremos em contato em breve!</h1>
+    </section>
+
+    <footer>
+        <section class="conteudoRodape" id="rodape">
+            <div class="cont1">
+                <p class="infoCont">Sobre</p>
+                <ul>
+                    <li>Hospedagem</li>
+                    <li>Loja Oficial</li>
+                    <li>Politicas de Privacidade</li>
+                    <li>Fale conosco</li>
+                </ul>
+            </div>
+    
+            <div class="cont2">
+                <p class="infoCont">Opções</p>
+                <ul>
+                    <li>Teste de velocidade</li>
+                    <li>Conversor de Texto</li>
+                    <li>Contador de Caracteres</li>
+                    <li>Botão Whatsapp</li>
+                </ul>
+            </div>
+    
+            <div class="cont3">
+                <p class="infoCont">Categorias</p>
+                <ul>
+                    <li>Design</li>
+                    <li>Markting</li>
+                    <li>Programação</li>
+                    <li>Tutoriais</li>
+                </ul>
+            </div>
+    
+            <div class="cont4">
+                <p class="infoCont">Contato</p>
+                <ul>
+                    <li>E-BOOKS</li>
+                    <li>20 Leis de UX</li>
+                    <li>Introdução ao book</li>
+                    <li>fale conosco</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="direitos">
+            <p>MiguelArcanjo &copy; Direitos Reservados</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
