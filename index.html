@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+        * {
+            font-family: 'Open sans';
+        }
+
+        body {
+            background: silver;
+            margin: 0;
+        }
+
+        .tabela1 {
+            background: blue;
+        }
+
+        .tabela2 {
+            background: steelblue;
+        }
+
+        .text {
+            color: #fff;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .text2 {
+            color: #fff;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .tabela-lista {
+            padding-bottom: 20px;
+            display: flex;
+
+        }
+
+        .tabela {
+            display: flex;
+            justify-content: flex-start;
+            width: 50%;
+            /* background: red; */
+            border: 0.5px solid black;
+        }
+
+        .protocolos {
+            /* background: blue; */
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            border: 0.5px solid black;
+
+        }
+
+        .testeflex {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            height: auto;
+            display: flex;
+            color: #FFF;
+        }
+
+        .conteudo1 {
+            background: blue;
+            width: 33.33%;
+            text-align: center;
+        }
+
+        .conteudo1 > header {
+            padding-top: 10px;
+        }
+
+        .conteudo1 > p {
+            padding: 60px;
+        }
+
+        .conteudo2 {
+            background: rgb(92, 119, 238);
+            width: 33.33%;
+            text-align: center;
+        }
+
+        .conteudo2 > header {
+            padding-top: 35px;
+        }
+
+        .conteudo2 > p {
+            padding: 60px;
+        }
+
+        .conteudo3 {
+            background: rgb(19, 62, 141);
+            width: 33.33%;
+            text-align: center;
+        }
+
+        .conteudo3 > header {
+            padding-top: 35px;
+        }
+
+        .conteudo3 > p {
+            padding: 60px;
+        }
+
+        .topo {
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            background: blue;
+            text-align: center;
+            color: #FFF;
+        }
+
+        .tag {
+            display: flex;
+            font-size: 35pt;
+        }
+
+        .divNav {
+            
+            padding-top: 10px;
+        }
+
+        .menu {
+            padding-left: 12px;
+            padding-right: 12px;
+            justify-content: space-between;
+            display: flex;
+            border: 1px solid black;
+            background: blue;
+        }
+
+        .inicio {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .html{
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .tabelas {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .sobre {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .rodape {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .contato {
+            cursor: pointer;
+            text-decoration: none;
+            color: #FFF;
+        }
+        
+        .conteudoRodape {
+            height: auto;
+            display: flex;
+            
+        }
+
+        .cont1 {
+            background: #092b5a;
+            width: 25%;
+            color: #FFF;
+        }
+
+        .cont2 {
+            background: rgb(101, 159, 218);
+            width: 25%;
+            color: #FFF;
+        }
+
+        .cont3 {
+            background: #04394e;
+            width: 25%;
+            color: #FFF;
+        }
+
+        .cont4 {
+            background: #09738a;
+            width: 25%;
+            color: #FFF;
+        }
+
+        .sobreHtml {
+            border: 1px solid blue;
+            padding: 5px;
+
+        }
+
+        .infoCont {
+            text-align: center;
+
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .direitos {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section class="topo">
+        <header>
+            <h1 class="tag">HTML <sup>Linguagem de Marcação de Hipertexto</sup></h1>
+            <h2 class="">Tutoriais para iniciantes</h2>
+        </header>
+    </section>
+    
+    <div class="divNav">
+        <nav class="menu">
+            <a href="#inicio" class="inicio"><p>Início</p></a>
+            <a href="#htmlfuncao" class="html"><p>HTML</p></a>
+            <a href="#tabelaElista" class="tabelas"><p>Tabelas</p></a>
+            <a href="#informacoes" class="sobre"><p>Sobre CSS, HTML e JS</p></a>
+            <a href="#rodape" class="rodape"><p>Rodapé</p></a>
+            <a href="/contato.html" class="contato"><p>Contato</p></a>
+    
+        </nav>
+    </div>
+
+    <section id="" class="sobreHtml">
+        <p><img src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn" width="60" align="left" hspace="10px"><strong><ins>HTML</ins></strong>(Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. <mark> Define o significado e a estrutura do conteúdo da web</mark>. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre padrões HyTimer e SGML. HyTimer é um padrão para a representação estruturada da hipermídia e conteúdo baseado em tempo. Os hipertextos são a junção de vários elementos - palavras, vídeos e conteúdos -, que, quando conectados, estabelecem uma rede de dados que permite a comunicação, o armazenamento e o compartilhamento de informações. Por exemplo, ao visitar um website, você encontra diversas informações com formatações diferentes, como parágrafos, bullets e fontes distintas. Pois então, essa estruturação é realizada por meio do HTML.</p>
+
+        <h1 id="htmlfuncao">Qual a fução do HTML?</h1>
+        <p>Imagine que você precisa construir um site do zero com informações de sua empresa. Nesse caso, você precisará conhecer a estrutura HTML, criando um documento no bloco de notas e acrescentando códigos -tags-, que indicarão parágrafos, quebra de texto, espaçamento, imagem, entre outros. Em geral, em um único site, existem diversos documentos HTML, criando páginas como homepage, página de produto e informações sobre a empresa. Em cada aba, existe um código diferente.</p>
+    </section>
+    
+    <br>
+    <hr>
+
+    <section class="tabela-lista" id="tabelaElista">
+        <section class="tabela">
+
+            <table border="1">
+                <thead class="tabela1">
+                    <tr>
+                        <th class="text">TAG</th>
+                        <th class="text">UTILIDADE</th>
+                    </tr>
+                </thead>
+        
+                <tbody class="tabela2">
+                    <tr>
+                        <td class="text2">P</td>
+                        <td class="text2">Insere um parágrafo no documento</td>
+                    </tr>
+                </tbody>
+            
+                <tbody class="tabela2">
+                    <tr>
+                        <td class="text2">TITLE</td>
+                        <td class="text2">É usado para definir um título ao documento</td>
+                    </tr>
+                </tbody>
+        
+                <tbody class="tabela2">
+                    <tr>
+                        <td class="text2">BODY</td>
+                        <td class="text2">É o corpo do documento que ira mostrar tudo que esta dentro dele na web</td>
+                    </tr>
+                </tbody>
+        
+                <tbody class="tabela2">
+                    <tr>
+                        <td class="text2">DIV</td>
+                        <td class="text2">Serve para organizar coisas dentro da pagina</td>
+                    </tr>
+                </tbody>
+                
+                <tbody class="tabela2">
+                    <tr>
+                        <td class="text2">STRONG</td>
+                        <td class="text2">É usado para reprensentar uma parte importante do texto</td>
+                    </tr>
+                </tbody>
+        
+                <tbody class="tabela2">
+                    <tr>
+                        <td class="text2">IMG</td>
+                        <td class="text2">Serve para adicionar imagens no site</td>
+                    </tr>
+                </tbody>
+        
+                <tbody class="tabela2">
+                    <tr>
+                        <td class="text2">B</td>
+                        <td class="text2">É usado para deixar o texto selecionado em negrito</td>
+                    </tr>
+                </tbody>
+        
+                <tbody class="tabela2">
+                    <tr>
+                        <td class="text2">SMALL</td>
+                        <td class="text2">Serve para deixar o tamanho da fonte do texto menor</td>
+                    </tr>
+                </tbody>
+        
+            </table>
+        </section>
+    
+        <section class="protocolos" >
+            
+            <ol>
+                <h3>Protocolos Web</h3>
+                <li>TCP/IP</li>
+                <li>HTTP E HTTPS</li>
+                <li>XMPP</li>
+                <li>POP, IMAP E SMTP</li>
+                <li>DHCP</li>
+                <li>FTP, FSTP E FTPS</li>
+                <li>SSH</li>
+                <li>ICMP</li>
+            </ol>
+        </section>
+
+    </section>
+
+    <section class="testeflex" id="informacoes">
+        <div class="conteudo1">
+            <br>
+            <header>O que é CSS?</header>
+            <p>CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por linguagens como HTML, XML ou XHTML, por exemplo. De forma prática, ela funciona como uma camada de personalização ao conteúdo visível.</p>
+        </div>
+
+        <div class="conteudo2">
+            <header>O que é HTML?</header>
+            <p>Sigla para HyperText Markup Language — Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.</p>
+        </div>
+
+        <div class="conteudo3">
+            <header>O que é JavaScript?</header>
+            <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <section class="conteudoRodape" id="rodape">
+            <div class="cont1">
+                <p class="infoCont">Sobre</p>
+                <ul>
+                    <li class="cursor">Hospedagem</li>
+                    <li class="cursor">Loja Oficial</li>
+                    <li class="cursor">Politicas de Privacidade</li>
+                    <li class="cursor">Fale conosco</li>
+                </ul>
+            </div>
+    
+            <div class="cont2">
+                <p class="infoCont">Opções</p>
+                <ul>
+                    <li class="cursor">Teste de velocidade</li>
+                    <li class="cursor">Conversor de Texto</li>
+                    <li class="cursor">Contador de Caracteres</li>
+                    <li class="cursor">Botão Whatsapp</li>
+                </ul>
+            </div>
+    
+            <div class="cont3">
+                <p class="infoCont">Categorias</p>
+                <ul>
+                    <li class="cursor">Design</li>
+                    <li class="cursor">Markting</li>
+                    <li class="cursor">Programação</li>
+                    <li class="cursor">Tutoriais</li>
+                </ul>
+            </div>
+    
+            <div class="cont4">
+                <p class="infoCont">Contato</p>
+                <ul>
+                    <li class="cursor">E-BOOKS</li>
+                    <li class="cursor">20 Leis de UX</li>
+                    <li class="cursor">Introdução ao book</li>
+                    <li class="cursor">fale conosco</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="direitos">
+            <p>MiguelArcanjo &copy; Direitos Reservados</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
